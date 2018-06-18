@@ -147,7 +147,7 @@ public class init {
         if (orderedCost.size() != 0) {
             u.get(user_index).used_last = true;
             int token = (int) (Math.random() * 200);
-            if (used_tokens.contains(token)) {
+            while (used_tokens.contains(token)) {
                 token = (int) (Math.random() * 200);
             }
             used_tokens.add(token);
